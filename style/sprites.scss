@@ -2,27 +2,31 @@
     background-image: url('../image/sprites.png');
 }
 
+@mixin position($position) {
+    background-position: $position 0px;
+}
+
 .tile.tile-2 .tile-inner {
     @include sprite;
-    background-position: 107px 0px;
+    @include position(107px);
 }
 
 .tile.tile-4 .tile-inner {
     @include sprite;
-    background-position: 214px 0px;
+    @include position(214px);
 }
 
 .tile.tile-8 .tile-inner {
     @include sprite;
-    background-position: 321px 0px;
+    @include position(321px);
 }
 
 .tile.tile-16 .tile-inner {
     @include sprite;
-    background-position: 428px 0px;
+    @include position(428px);
 }
 
 .tile.tile-32 .tile-inner {
     @include sprite;
-    background-position: 535px 0px;
+    @include position(535px);
 }
