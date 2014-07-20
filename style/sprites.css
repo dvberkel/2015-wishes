@@ -1,24 +1,19 @@
 .tile.tile-2 .tile-inner {
-    background-image: url('../image/sprites.png');
-    background-position: 107px 0px;
-}
+  background-image: url("../image/sprites.png");
+  background-position: 107px 0px; }
 
 .tile.tile-4 .tile-inner {
-    background-image: url('../image/sprites.png');
-    background-position: 214px 0px;
-}
+  background-image: url("../image/sprites.png");
+  background-position: 214px 0px; }
 
 .tile.tile-8 .tile-inner {
-    background-image: url('../image/sprites.png');
-    background-position: 321px 0px;
-}
+  background-image: url("../image/sprites.png");
+  background-position: 321px 0px; }
 
 .tile.tile-16 .tile-inner {
-    background-image: url('../image/sprites.png');
-    background-position: 428px 0px;
-}
+  background-image: url("../image/sprites.png");
+  background-position: 428px 0px; }
 
 .tile.tile-32 .tile-inner {
-    background-image: url('../image/sprites.png');
-    background-position: 535px 0px;
-}
+  background-image: url("../image/sprites.png");
+  background-position: 535px 0px; }
