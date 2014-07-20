@@ -1,24 +1,28 @@
-.tile.tile-2 .tile-inner {
+@mixin sprite() {
     background-image: url('../image/sprites.png');
+}
+
+.tile.tile-2 .tile-inner {
+    @include sprite;
     background-position: 107px 0px;
 }
 
 .tile.tile-4 .tile-inner {
-    background-image: url('../image/sprites.png');
+    @include sprite;
     background-position: 214px 0px;
 }
 
 .tile.tile-8 .tile-inner {
-    background-image: url('../image/sprites.png');
+    @include sprite;
     background-position: 321px 0px;
 }
 
 .tile.tile-16 .tile-inner {
-    background-image: url('../image/sprites.png');
+    @include sprite;
     background-position: 428px 0px;
 }
 
 .tile.tile-32 .tile-inner {
-    background-image: url('../image/sprites.png');
+    @include sprite;
     background-position: 535px 0px;
 }
