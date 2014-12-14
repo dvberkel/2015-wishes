@@ -1,5 +1,6 @@
-function GameManager(size, InputManager, Actuator, StorageManager) {
+function GameManager(size, target, InputManager, Actuator, StorageManager) {
   this.size           = size; // Size of the grid
+  this.target         = target;	// Tile to reach
   this.inputManager   = new InputManager;
   this.storageManager = new StorageManager;
   this.actuator       = new Actuator;
@@ -20,7 +21,7 @@ GameManager.prototype.restart = function () {
   this.setup();
 };
 
-// Keep playing after winning (allows going over 2048)
+// Keep playing after winning (allows going over target)
 GameManager.prototype.keepPlaying = function () {
   this.keepPlaying = true;
   this.actuator.continueGame(); // Clear the game won/lost message
@@ -166,8 +167,8 @@ GameManager.prototype.move = function (direction) {
           // Update the score
           self.score += merged.value;
 
-          // The mighty 2048 tile
-          if (merged.value === 2048) self.won = true;
+          // The mighty target tile
+          if (merged.value === self.target) self.won = true;
         } else {
           self.moveTile(tile, positions.farthest);
         }
