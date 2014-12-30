@@ -1,21 +1,65 @@
 .tile.tile-2 .tile-inner {
-  background-image: url("../image/sprites.png");
+  background-image: url("../image/sprites.jpg");
   background-position: 107px 0px; }
 
 .tile.tile-4 .tile-inner {
-  background-image: url("../image/sprites.png");
+  background-image: url("../image/sprites.jpg");
   background-position: 214px 0px; }
 
 .tile.tile-8 .tile-inner {
-  background-image: url("../image/sprites.png");
+  background-image: url("../image/sprites.jpg");
   background-position: 321px 0px; }
 
 .tile.tile-16 .tile-inner {
-  background-image: url("../image/sprites.png");
+  background-image: url("../image/sprites.jpg");
   background-position: 428px 0px; }
 
 .tile.tile-32 .tile-inner {
-  background-image: url("../image/sprites.png");
+  background-image: url("../image/sprites.jpg");
   background-position: 535px 0px; }
+
+.tile.tile-64 .tile-inner {
+  background-image: url("../image/sprites.jpg");
+  background-position: 642px 0px; }
+
+.tile.tile-128 .tile-inner {
+  background-image: url("../image/sprites.jpg");
+  background-position: 749px 0px; }
+
+.tile.tile-256 .tile-inner {
+  background-image: url("../image/sprites.jpg");
+  background-position: 856px 0px; }
+
+.tile.tile-512 .tile-inner {
+  background-image: url("../image/sprites.jpg");
+  background-position: 963px 0px; }
+
+.tile.tile-1024 .tile-inner {
+  background-image: url("../image/sprites.jpg");
+  background-position: 1070px 0px; }
+
+.tile.tile-2048 .tile-inner {
+  background-image: url("../image/sprites.jpg");
+  background-position: 1177px 0px; }
+
+.tile.tile-4096 .tile-inner {
+  background-image: url("../image/sprites.jpg");
+  background-position: 1284px 0px; }
+
+.tile.tile-8192 .tile-inner {
+  background-image: url("../image/sprites.jpg");
+  background-position: 1391px 0px; }
+
+.tile.tile-16384 .tile-inner {
+  background-image: url("../image/sprites.jpg");
+  background-position: 1498px 0px; }
+
+.tile.tile-32768 .tile-inner {
+  background-image: url("../image/sprites.jpg");
+  background-position: 1605px 0px; }
+
+.tile.tile-65536 .tile-inner {
+  background-image: url("../image/sprites.jpg");
+  background-position: 1712px 0px; }
 
 /*# sourceMappingURL=sprites.css.map */

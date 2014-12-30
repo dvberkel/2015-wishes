@@ -1,12 +1,29 @@
 @mixin sprite() {
-    background-image: url('../image/sprites.png');
+    background-image: url('../image/sprites.jpg');
 }
 
 @mixin position($position) {
     background-position: $position 0px;
 }
 
-@each $multiple, $power in ((1, 2), (2, 4), (3, 8), (4, 16), (5, 32)) {
+@each $multiple, $power in (
+			    (1, 2),
+			    (2, 4),
+			    (3, 8),
+			    (4, 16),
+			    (5, 32),
+			    (6, 64),
+			    (7, 128),
+			    (8, 256),
+			    (9, 512),
+			    (10, 1024),
+			    (11, 2048),
+			    (12, 4096),
+			    (13, 8192),
+			    (14, 16384),
+			    (15, 32768),
+			    (16, 65536)
+			) {
     .tile.tile-#{$power} .tile-inner {
 	@include sprite;
 	@include position($multiple * 107px);
