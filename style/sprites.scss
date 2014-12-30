@@ -6,27 +6,9 @@
     background-position: $position 0px;
 }
 
-.tile.tile-2 .tile-inner {
-    @include sprite;
-    @include position(107px);
-}
-
-.tile.tile-4 .tile-inner {
-    @include sprite;
-    @include position(214px);
-}
-
-.tile.tile-8 .tile-inner {
-    @include sprite;
-    @include position(321px);
-}
-
-.tile.tile-16 .tile-inner {
-    @include sprite;
-    @include position(428px);
-}
-
-.tile.tile-32 .tile-inner {
-    @include sprite;
-    @include position(535px);
+@each $multiple, $power in ((1, 2), (2, 4), (3, 8), (4, 16), (5, 32)) {
+    .tile.tile-#{$power} .tile-inner {
+	@include sprite;
+	@include position($multiple * 107px);
+    }
 }
